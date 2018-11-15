@@ -191,8 +191,6 @@ void loop(void)
   if (calibrateState !=0) {
     for (int i = 0; i < 10; i++) {
       tenCounter += event.acceleration.x;
-//      Serial.println("Ten Counter:");
-//      Serial.println(tenCounter);
       delay(1);
     }
     xAverage = tenCounter / 10.0;
